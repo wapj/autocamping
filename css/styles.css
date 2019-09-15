@@ -35,6 +35,16 @@ img {
     margin:0 auto;
 }
 
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width:2px;
+    border-style:solid;
+    padding: .5em 1.75em;
+}
+
 /* typography ============================ */
 .title {
     font-size: 2.3rem;
@@ -97,7 +107,7 @@ section h2::after {
     left:0;
     bottom:0;
     height:3px;
-    background: #eee;
+    background: #2175A4;
 }
 
 section::after {
@@ -180,6 +190,7 @@ figure img {
 .reservation {
     padding: 1.5rem 0;
     background-color: #E9F4F6;
+    text-decoration: none;
 }
 
  .tel {
@@ -199,19 +210,19 @@ figure img {
 
 .button-dark {
     color:#232323;
-    border-color:#232323;
+    border-color:#2175A4;
 }
 
 .button-dark:hover,
 .button-dark:focus
  {
-    background:#232323;
-    color:#00ff6c;
+    background:#2175A4;
+    color:#fff;
 }
 
 footer {
     margin:0;
     padding:0;
-    background: #333;
+    background: #232323;
     color:#fff;
 }
