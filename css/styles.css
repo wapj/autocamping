@@ -1,0 +1,163 @@
+@import
+url('https://fonts.googleapis.com/css?family=Gothic+A1|Noto+Sans+KR&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body {
+    margin:0;
+    font-family: 'Gothic A1', 'Noto Sans KR';
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo { 
+    font-size: 1.4rem;
+    font-weight: 900;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    color:#fff;
+}
+
+.container {
+    width:95%;
+    margin:0 auto;
+}
+
+/* typography ============================ */
+.title {
+    font-size: 2.3rem;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .7em;
+}
+
+/* header ============================ */
+
+header {
+    position: absolute;
+    left:0;
+    right: 0;
+    margin:1em;
+}
+
+nav ul {
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color:#fff;
+}
+
+
+nav a:hover, nav a:focus {
+    color: #DDD;
+}
+
+@media (min-width:60rem) {
+    .logo {
+        float: left;
+    }
+    nav {
+        float: right;
+    }
+}
+
+/* section ======================= */
+section h2::after {
+    display: block;
+    content:"";
+    margin:0 auto;
+    width:150px;
+    left:0;
+    bottom:0;
+    height:3px;
+    background: #e3c4a8;
+}
+
+/* hero ============================ */
+
+.home-hero {
+    background-image: url(../img/mainbg.jpg); 
+    background-position: center;
+    background-size: cover;
+    padding: 10em 0;
+    color: #fff;
+}
+
+/* portfolio ============================ */
+
+.portfolio {
+    margin: 3em 0;
+}
+
+.port-item { 
+    margin:0;
+    position: relative;
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left:0;
+    right:0;
+    color:white;
+    background: rgba(0,0,0,.6);
+    padding: 0;
+}
+
+figure img {
+    
+    display: block;
+}
+
+@media (min-width: 35rem) {
+    .port-item {      
+        object-fit:cover;
+        width: 50%;
+        float:left;
+    }
+}
+
+
+@media (min-width: 60rem) {
+    .port-item {
+        object-fit:cover;
+        width: 33.3333333%;
+        overflow: hidden;
+    }
+
+    .port-desc {
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc {
+        transform: translate(0%);
+    }
+}
